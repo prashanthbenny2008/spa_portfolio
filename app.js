@@ -28,8 +28,8 @@ menu_item.forEach((item) => {
 resumeDownloadButton.addEventListener('click', () => {
 	try{
 		var link = document.createElement("a");
-		link.download = 'PrashanthBennyKoryar.pdf';
-		link.href = './resources/Resume.pdf';
+		link.download = 'PrashanthBennyKoryar.pdf'; //Downloaded file name
+		link.href = './resources/Resume.pdf'; //Name of the file in the resources folder
 		link.target = '_blank'
 		link.click();
 	}
