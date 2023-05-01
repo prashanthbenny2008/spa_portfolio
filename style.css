@@ -198,15 +198,15 @@ p {
 }
 /* End Header section */
 
-/* Hero Section */
-#hero {
+/* home Section */
+#home {
 	background-image: url(./img/hero-bg.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
-#hero .overlay{
+#home .overlay{
 	position: absolute;
 	top:0;
 	right:0;
@@ -214,7 +214,7 @@ p {
 	height: 100%;
 	background: rgba(126, 82, 82, 0.5);
 }
-#hero::after {
+#home::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -225,13 +225,13 @@ p {
 	opacity: 0.7;
 	z-index: -1;
 }
-#hero .hero {
+#home .hero {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero h1 {
+#home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
@@ -240,17 +240,17 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
-#hero h1:nth-child(1) {
+#home h1:nth-child(1) {
 	animation-delay: 1s;
 }
-#hero h1:nth-child(2) {
+#home h1:nth-child(2) {
 	animation-delay: 2s;
 }
-#hero h1:nth-child(3) {
+#home h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
-#hero h1 span {
+#home h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -260,17 +260,17 @@ p {
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(1) span {
+#home h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(2) span {
+#home h1:nth-child(2) span {
 	animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span {
+#home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+/* End home Section */
 
 /* Services Section */
 #services .services {
@@ -372,7 +372,7 @@ p {
 	color: white;
 }
 #projects .project-info h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 500;
 }
 #projects .project-info h2 {
@@ -380,8 +380,19 @@ p {
 	font-weight: 500;
 	margin-top: 10px;
 }
+#projects .project-info h2 span{
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: 10px;
+}
 #projects .project-info p {
+	font-size: 1.3rem;
 	color: white;
+}
+#projects .project-info ol{
+	font-size: 1.2rem;
+	color: white;
+	margin-left: 15px;
 }
 #projects .project-img {
 	flex-basis: 50%;
@@ -438,21 +449,21 @@ p {
 	font-size: 2rem;
 }
 #about .col-left .about-img {
-	height: 100%;
+	height: auto;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
-#about .col-left .about-img::after {
+/* #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
 	left: -33px;
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson;
+	border: 7px solid crimson; 
 	z-index: -1;
-}
+} */
 /* End About Section */
 
 /* contact Section */
@@ -584,11 +595,11 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Hero */
-	#hero h1 {
+	/* home */
+	#home h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
+	/* End home */
 
 	/* Services Section */
 	#services .service-bottom .service-item {
